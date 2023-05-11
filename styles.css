@@ -10,19 +10,29 @@ footer {
     background-color: #1f2937;
 }
 
+header {
+    padding: 0 100px;
+}
+
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #e5e7eb
 }
 
-.nav-link {
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.nav-link,
+footer {
     text-decoration: none;
+    font-size: 18px;
     color: #e5e7eb
 }
 
-a:hover {
+.nav-link:hover {
     text-decoration: underline;
 }
 
@@ -30,4 +40,9 @@ ul {
     list-style: none;
     display: flex;
     gap: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
 }
