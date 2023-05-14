@@ -4,13 +4,32 @@ body {
     margin: 0;
 }
 
+.content-wrapper {
+    width: 100vw;
+
+}
+
 header,
 footer {
     background-color: #1f2937;
+    color: #f1faf8;
 }
 
-header {
-    padding: 0 100px;
+header,
+footer,
+section {
+    padding: 0 50px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f1faf8;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0;
 }
 
 .header-nav {
@@ -19,54 +38,117 @@ header {
     align-items: center;
 }
 
-.header-logo {
-    font-size: 24px;
-    color: #f9faf8;
-}
-
-.nav-link,
-footer {
-    text-decoration: none;
-    font-size: 18px;
-    color: #e5e7eb
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-ul {
-    list-style: none;
+.header-nav>ul {
     display: flex;
     gap: 25px;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
+.header-nav>ul>li {
+    list-style: none;
+}
+
+.header-nav>ul>li>a {
+    text-decoration: none;
+}
+
+.header-nav>ul>li>a,
+.header-info>p,
+.sign-up-btn {
+    font-size: 18px;
+    color: #f1faf8;
+}
+
+.sign-up-btn {
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-style: none;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-around;
-    gap: 70px;
-}
-
-.header-info {
-    width: 45%;
-}
-
-.header-info>p {
-    font-size: 18px;
-    color: #f9faf8;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 100px 0;
 }
 
 img {
-    width: 400px;
+    width: 600px;
+    height: auto;
+}
+
+section {
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.box-text {
+    width: 150px;
+    text-align: center;
+}
+
+.s2 {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.s2>p {
+    width: 75vw;
+    margin: 0;
+}
+
+.s2>.author {
+    text-align: right;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.s3 {
+    background-color: #3882f6;
+    color: #f1faf8;
+    width: 60vw;
+    border-radius: 15px;
+    padding: 25px 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.s3>button {
+    border: 2px solid #f1faf8;
+    width: 125px;
 }
 
 footer {
+    padding: 25px 0;
     text-align: center;
-    padding: 15px 0;
 }
